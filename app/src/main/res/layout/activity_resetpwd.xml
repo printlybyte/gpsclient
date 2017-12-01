@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEAED"
+    tools:context="com.mj.gpsclient.Activity.LoginActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/title_img"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginTop="25dp"
+    android:orientation="vertical"
+    android:id="@+id/editTexts">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/editText_old_pwd"
+        android:background="@drawable/edit"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:drawablePadding="20dp"
+        android:hint="旧密码"
+        android:text=""
+
+        />
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit"
+        android:id="@+id/editText_pwd_one"
+        android:hint="新密码"
+        android:text=""
+        android:gravity="left|center_vertical"
+        android:drawablePadding="30dp"
+        />
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit"
+        android:id="@+id/editText_pwd_two"
+        android:hint="确认新密码"
+        android:text=""
+        android:gravity="left|center_vertical"
+        android:drawablePadding="30dp"
+        />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTexts"
+        android:layout_centerHorizontal="true"
+        android:background="@color/aaa"
+        android:layout_marginTop="16dp"
+        android:text="修改密码"
+        android:textColor="@color/moji_background_white"
+        android:id="@+id/btn_reset"
+        />
+
+</RelativeLayout>

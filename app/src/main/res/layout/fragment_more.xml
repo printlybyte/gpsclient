@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/moji_background_gray"
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:layout_weight="0"-->
+                <!--android:background="#ffdfdfdf" />-->
+
+            <!--<include-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/layout_func_switchs" />-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="0"
+                    android:background="#ffdfdfdf" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_resetPwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/moji_setting_item_single_btn"
+                    android:paddingLeft="16dp" >
+
+                    <TextView
+                        style="@style/setting_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:id="@+id/txt_resetPwd"
+                        android:text="修改密码 "
+                        android:textColor="@color/moji_black_text" />
+
+                    <ImageView
+                        android:id="@+id/right_icon24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="16dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/more_right_icon" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="#ffdfdfdf" />
+                <RelativeLayout
+                    android:id="@+id/rl_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@drawable/moji_setting_item_single_btn"
+                    android:paddingLeft="16dp" >
+
+                    <TextView
+                        style="@style/setting_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="检测新版本 "
+                        android:textColor="@color/moji_black_text" />
+
+                    <ImageView
+                        android:id="@+id/right_icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="16dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/more_right_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="#ffdfdfdf" />
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/rl_about"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:background="@drawable/moji_setting_item_single_btn"-->
+                    <!--android:paddingLeft="16dp" >-->
+
+                    <!--<TextView-->
+                        <!--style="@style/setting_text"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="信息推送开关"-->
+                        <!--android:textColor="@color/moji_black_text" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/right_icon3"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:paddingLeft="5dp"-->
+                        <!--android:paddingRight="16dp"-->
+                        <!--android:scaleType="centerInside"-->
+                        <!--android:src="@drawable/more_right_icon" />-->
+                <!--</RelativeLayout>-->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffdfdfdf" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="20dp"
+                android:background="#ffdfdfdf" />
+
+            <TextView
+                android:id="@+id/txt_logout"
+                style="@style/setting_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/moji_setting_item_single_btn"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="注销登录" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffdfdfdf" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

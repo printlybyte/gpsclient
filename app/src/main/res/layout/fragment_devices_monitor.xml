@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:layout_height="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="#78B8B6B5"
+            android:src="@drawable/backwardbtn"
+            android:id="@+id/back" />
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+             android:paddingLeft="14dp"
+             android:paddingRight="14dp"
+             android:paddingTop="10dp"
+             android:paddingBottom="10dp"
+            android:background="#78B8B6B5"
+            android:id="@+id/next"
+            android:src="@drawable/forwardbtn"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#e0ffffff"
+            android:id="@+id/loaction_GeoCode"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:gravity="left|center_vertical"
+            android:text=""/>
+    </FrameLayout>
+
+</RelativeLayout>

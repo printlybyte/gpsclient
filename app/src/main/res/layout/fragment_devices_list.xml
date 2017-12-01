@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <com.mj.gpsclient.view.SearchBarView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible" >
+        </com.mj.gpsclient.view.SearchBarView>
+
+        <com.mj.gpsclient.view.segmentSelectView
+            android:id="@+id/segmentation_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/aaa" >
+        </com.mj.gpsclient.view.segmentSelectView>
+        <com.mj.gpsclient.view.FollowingSelectView 
+            android:id="@+id/follow_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"
+            
+            ></com.mj.gpsclient.view.FollowingSelectView>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/devices_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="6dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#ccc"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

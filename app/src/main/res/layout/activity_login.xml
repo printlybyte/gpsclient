@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mj.gpsclient.Activity.LoginActivity" >
+
+    <RelativeLayout
+        android:id="@+id/login_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e1e7eb" >
+
+        <ImageView
+            android:id="@+id/title_img"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/tuqingonlinetitle"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/editTexts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_img"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_bg1" />
+
+            <!-- 13020081110 -->
+
+            <EditText
+                android:id="@+id/editText_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/edit"
+                android:drawablePadding="20dp"
+                android:singleLine="true"
+                android:drawableRight="@drawable/loginmanimage"
+                android:gravity="left|center_vertical"
+                android:hint="账户名"
+                android:paddingLeft="10dp"
+                android:text="" />
+
+            <!-- 081110 -->
+
+            <EditText
+                android:id="@+id/editText_user_pass"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edit"
+                android:drawablePadding="30dp"
+                android:drawableRight="@drawable/loginpasswordimage"
+                android:gravity="left|center_vertical"
+                android:hint="登录密码"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sava_pass_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTexts"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <CheckBox
+                android:id="@+id/user_sava_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:text="记住密码"
+                android:textColor="#EA6E09" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sava_pass_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/aaa"
+            android:padding="5dp"
+            android:text="登      录"
+            android:textColor="@color/moji_background_white"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/login_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="1dp"
+                android:text="我要试用"
+                android:textColor="#EA6E09"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:text="新用户注册"
+                android:textColor="#EA6E09"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/erweima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_other"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/tuqiangerweima"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/erweima"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:text="扫扫分享"
+            android:textColor="#EA6E09"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

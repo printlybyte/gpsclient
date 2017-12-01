@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/tab_top_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll1_follow_allTime"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_back_Follow_allTime"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:src="@drawable/back_n" />
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="53dp"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginRight="90dp"
+            android:layout_toRightOf="@+id/ll1_follow_allTime"
+            android:gravity="center"
+            android:text="实时追踪"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="53dp"
+            android:layout_toLeftOf="@+id/ll2_follow_allTime"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:id="@+id/ll2_follow_allTime"
+            android:layout_width="100dp"
+            android:layout_height="53dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="实时跟踪轨迹"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <Switch
+                android:layout_marginTop="3dp"
+                android:id="@+id/switch_bt_allTime"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginLeft="2dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/bmapView_follow_allTime"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</LinearLayout>

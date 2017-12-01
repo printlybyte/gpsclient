@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0ffffff"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/location_time"
+        android:padding="4dp"
+        android:textSize="14sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text=" 2015-06-14 15:41:09"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/location_msg"
+        android:padding="4dp"
+        android:textSize="14sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text=" 维度:39.845604  经度:116.359906 速度:19.00KM/H"
+
+        />
+
+</LinearLayout>

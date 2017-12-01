@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp">
+
+
+    <ImageButton
+        android:id="@+id/line1"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/line"
+        android:visibility="visible"
+        android:scaleType="fitCenter" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实时线路跟踪轨迹"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:layout_marginTop="4dp"
+            android:id="@+id/switch_test" />
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

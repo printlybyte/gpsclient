@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/reg_shap"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewreg"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="请输入您的注册码" />
+
+    <EditText
+        android:id="@+id/editTextReg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:paddingLeft="6dp"
+        android:singleLine="true"
+        android:background="@drawable/edit_shap"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:id="@+id/imageButtonReg"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/singlepos_btnpswok" />
+
+</LinearLayout>

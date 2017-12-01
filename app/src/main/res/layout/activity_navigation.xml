@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/xxxxx"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/tab_top_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll1_follow_allTime"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back_Follow_allTimen"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:src="@drawable/back_n" />
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="53dp"
+                android:src="@drawable/line" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginRight="90dp"
+            android:layout_toRightOf="@+id/ll1_follow_allTime"
+            android:gravity="center"
+            android:text="导航追踪"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="53dp"
+            android:layout_toLeftOf="@+id/ll2_follow_allTime"
+            android:src="@drawable/line" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll2_follow_allTime"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="53dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="开始导航"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="13sp" />-->
+
+            <!--<Switch-->
+
+                <!--android:id="@+id/switch_bt_allTimen"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:layout_marginTop="3dp" />-->
+
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/bmapView_follow_allTime"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/xxxxx"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/button3_native"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/refesh_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+
+        android:background="?selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mj.gpsclient.Utils.SwitchIconView
+            android:id="@+id/switchIconView3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            app:si_animation_duration="500"
+            app:si_disabled_alpha="1"
+            android:layout_weight="7"
+            app:si_disabled_color="#dadada"
+            app:si_tint_color="#ffb700"
+            app:srcCompat="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/button3_native_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="@string/liveload_nai"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/refesh_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/refesh"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="7"
+            android:background="@null"
+            android:onClick="planing"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="@string/liveload_once"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/button2_native"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/refesh_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mj.gpsclient.Utils.SwitchIconView
+
+
+            android:id="@+id/switchIconView2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:scaleType="center"
+            app:si_animation_duration="500"
+            app:si_disabled_alpha="1"
+            app:si_tint_color="#7956f9"
+            app:srcCompat="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/button2_native_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="@string/liveload"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

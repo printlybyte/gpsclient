@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+
+        <com.mj.gpsclient.view.HostoryDetailView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/location_detail_View"
+            android:layout_height="60dp">
+        </com.mj.gpsclient.view.HostoryDetailView>
+
+
+        <com.mj.gpsclient.view.SelectStartEndTimeView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/selectStartEndTimeView"
+            android:layout_height="80dp">
+        </com.mj.gpsclient.view.SelectStartEndTimeView>
+
+     </FrameLayout>
+
+</RelativeLayout>

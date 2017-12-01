@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radius_left_right_bg">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:id="@+id/search_cancel"
+        android:text="取消"
+        />
+
+    <ImageButton
+        android:id="@+id/line2"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/search_cancel"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/line"
+        android:scaleType="fitCenter" />
+
+    <com.mj.gpsclient.view.ClearEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/line2"
+        android:drawableRight="@drawable/delete_selector"
+        android:singleLine="true"
+        android:paddingLeft="12dp"
+        android:hint="请输入设备名"
+        android:background="@null"
+        android:drawableLeft="@drawable/title_search"
+        android:gravity="left|center_vertical"
+        android:id="@+id/search_edit"/>
+</RelativeLayout>

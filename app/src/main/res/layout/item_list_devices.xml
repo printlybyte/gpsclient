@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingLeft="20dp"
+    android:id="@+id/rl_forClick"
+    android:paddingRight="20dp"
+  >
+  
+     <ImageView
+         android:id="@+id/iv_item_device"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/check"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+     	android:visibility="gone"
+         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_item_device"
+        android:id="@+id/layout_devices_head"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carmovingimage"
+            android:id="@+id/heard_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:id="@+id/devices_onoffline"
+            android:textSize="14sp"
+            android:text="离线"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/layout_devices_head">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="GT200-42424"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/device_name" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="暂无"/>
+
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/detail_obd"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+         />
+
+</RelativeLayout>

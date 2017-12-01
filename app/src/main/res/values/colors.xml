@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="moji_background_gray">#fffaf8f8</color>
+    <color name="moji_title_menu_bg">#ff22292c</color>
+    <color name="moji_background_white">#ffffffff</color>
+    <color name="moji_black_text">#ff222a2a</color>
+    <color name="moji_gray_black_text">#aba49c</color>
+    <color name="moji_biv_line">#ffffff</color>
+    <color name="moji_main_text_gray">#717070</color>
+    <color name="moji_role_text">#e8e9df</color>
+    <color name="moji_role_line">#19ffffff</color>
+    <color name="moji_role2_line">#e7e7e7</color>
+    <color name="moji_role2_gray_text">#9e9e9e</color>
+    <color name="moji_role2_red_text">#ff5c52</color>
+    <color name="moji_role2_yellow_text">#fbaa00</color>
+    <color name="moji_role2_gray_bg">#f7f7f7</color>
+    <color name="moji_role_avatar_bg">#CC578186</color>
+    <color name="moji_app_color_black">#ff1c1c1c</color>
+    <color name="moji_custom_black">#ff130f30</color>
+    <color name="moji_wardrobe_gray_text">#5a5959</color>
+    <color name="moji_wardrobe_gray_top_bg">#1e1f23</color>
+    <color name="moji_wardrobe_gray_content_bg">#262930</color>
+    <color name="moji_wardrobe_red_line">#f34141</color>
+    <color name="moji_pass_text_white">#ffffffff</color>
+    <color name="moji_infopop_bg_white">#E6ffffff</color>
+    <color name="moji_infopop_text_white">#ffedeeee</color>
+    <color name="moji_infopop_text_black">#ff464646</color>
+    <color name="moji_infopop_text_gray">#ff9a9a9a</color>
+    <color name="moji_infopop_text_gray1">#ffd3d3d3</color>
+    <color name="moji_infopop_bg_red">#fffdafaf</color>
+    <color name="moji_nickname_update_red">#f14365</color>
+    <color name="moji_nickname_update_back">#333333</color>
+    <color name="moji_nickname_update_gray">#dfdfdd</color>
+    <color name="moji_nickname_update_bg">#f5f0eb</color>
+    <color name="moji_game_text_green">#408a00</color>
+    <color name="permiss_bg">#ffffff</color>
+    <color name="permiss_bg_press">#efebeb</color>
+    <color name="moji_forum_text_select">#ff333333</color>
+    <color name="moji_forum_text_nomal">#ff929292</color>
+    <color name="photo_tab_red">#f14365</color>
+    <color name="photo_bg">#f5f0ec</color>
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+
+    <!-- Commons -->
+    <color name="background_app">#dedede</color>
+
+    <color name="background_list_back">#e3e3e3</color>
+    <color name="background_list_front">#ffffff</color>
+    <color name="text_title">#444444</color>
+    <color name="text_description">#7e7e7e</color>
+
+    <color name="line">#ffbcbcbc</color>
+
+    <color name="background_new_tag">#ff0000</color>
+    <color name="text_new_tag">#ffffff</color>
+    <color name="dialog_btn_bg">#e8e8e8</color>
+    <color name="setting_un_bind">#cccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="aaa">#0099FF</color>
+    <color name="blue">#3366cc</color>
+    <color name="red">#cc0000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#AEC8FF</color>
+    <color name="blue_text">#518CDD</color>
+</resources>
