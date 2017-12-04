@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -39,6 +40,7 @@ import com.baidu.location.LocationClientOption;
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
+import com.baidu.mapapi.map.CircleOptions;
 import com.baidu.mapapi.map.InfoWindow;
 import com.baidu.mapapi.map.MapPoi;
 import com.baidu.mapapi.map.MapStatusUpdate;
@@ -47,6 +49,7 @@ import com.baidu.mapapi.map.Marker;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.map.PolylineOptions;
+import com.baidu.mapapi.map.Stroke;
 import com.baidu.mapapi.map.TextureMapView;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.model.LatLngBounds;
@@ -216,6 +219,13 @@ public class NavigationActivity extends Activity {
                         getSerchAddress(latlng_1);//发起逆地理位置检索
 
                     }
+
+
+
+                    OverlayOptions fenceOverlay = new CircleOptions().fillColor(0x000000FF).center(latlng_1)
+                            .stroke(new Stroke(5, Color.rgb(0xff, 0x00, 0x33)))
+                            .radius(400);//画出圆形界限
+                    mBaiduMap_allTime.addOverlay(fenceOverlay);
 
                     Log.i("QWEQWE", "折现1" + dzhelat + "折现2" + dzhelot + "折现3" + latlng_1.latitude + "折现4" + latlng_1.longitude);
 
