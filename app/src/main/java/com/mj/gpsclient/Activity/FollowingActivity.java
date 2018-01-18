@@ -40,6 +40,7 @@ import com.baidu.mapapi.model.LatLngBounds.Builder;
 import com.baidu.mapapi.search.geocode.GeoCoder;
 import com.mj.gpsclient.Activity.BaseStrategyHandler.ICallBack;
 import com.mj.gpsclient.R;
+import com.mj.gpsclient.Utils.SwitchButton;
 import com.mj.gpsclient.db.DataFollowHelper;
 import com.mj.gpsclient.model.DeviceTrace;
 import com.mj.gpsclient.model.Devices;
@@ -65,7 +66,7 @@ public class FollowingActivity extends Activity {
 	private BitmapDescriptor bdB;
 	private ImageView iv_back_Follow;
 	private Switch bt_switch;
-	private Switch sc;
+	private SwitchButton sc;
 	private String lat;
 	private String lng;
 
@@ -279,7 +280,7 @@ public class FollowingActivity extends Activity {
 		mMapView = (MapView) findViewById(R.id.bmapView_follow);
 		mBaiduMap = mMapView.getMap();
 		iv_back_Follow = (ImageView) findViewById(R.id.iv_back_Follow);
-		sc = (Switch) findViewById(R.id.switch_bt);
+		sc = (SwitchButton) findViewById(R.id.switch_bt);
 		SwitchListener();
 		BaiduMapClickListener();
 		helper = new DataFollowHelper(this);
@@ -378,10 +379,9 @@ public class FollowingActivity extends Activity {
 	}
 
 	private void SwitchListener() {
-		sc.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+		sc.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
 			@Override
-			public void onCheckedChanged(CompoundButton buttonView,
-					boolean isChecked) {
+			public void onCheckedChanged(SwitchButton view, boolean isChecked) {
 				if (!isChecked) {// 关闭跟踪轨迹
 					Editor et = sp.edit();
 					et.putString(deviceImei, "2");
@@ -416,7 +416,6 @@ public class FollowingActivity extends Activity {
 				}
 			}
 		});
-		
 	}
 
 	private void ShowDialog() {

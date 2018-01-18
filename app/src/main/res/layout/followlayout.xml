@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -62,13 +63,16 @@
                 android:textColor="#ffffff"
                 android:textSize="13sp" />
 
-            <Switch
-                android:layout_marginTop="3dp"
+
+            <com.mj.gpsclient.Utils.SwitchButton
                 android:id="@+id/switch_bt"
                 android:layout_width="wrap_content"
                 android:layout_height="15dp"
                 android:layout_marginLeft="2dp"
-              /> 
+                android:layout_marginTop="3dp"
+                app:sb_checked="true"
+                />
+
 
         </LinearLayout>
     </RelativeLayout>

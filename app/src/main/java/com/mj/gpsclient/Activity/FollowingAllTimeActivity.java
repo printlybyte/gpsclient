@@ -14,9 +14,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -52,6 +50,7 @@ import com.baidu.navisdk.adapter.BNRoutePlanNode;
 import com.baidu.navisdk.adapter.BNaviSettingManager;
 import com.baidu.navisdk.adapter.BaiduNaviManager;
 import com.mj.gpsclient.R;
+import com.mj.gpsclient.Utils.SwitchButton;
 import com.mj.gpsclient.global.Constant;
 import com.mj.gpsclient.model.Devices;
 
@@ -75,7 +74,7 @@ public class FollowingAllTimeActivity extends Activity {
     private TextureMapView mMapView_allTime;
     private BaiduMap mBaiduMap_allTime;
     private ImageView iv_back_follow;
-    private Switch sc;
+    private SwitchButton sc;
     private Dialog dialog;
     private BitmapDescriptor bdA;
     private BitmapDescriptor bdB;
@@ -120,7 +119,7 @@ public class FollowingAllTimeActivity extends Activity {
         mMapView_allTime = (TextureMapView) findViewById(R.id.bmapView_follow_allTime);
         mBaiduMap_allTime = mMapView_allTime.getMap();
         iv_back_follow = (ImageView) findViewById(R.id.iv_back_Follow_allTime);
-        sc = (Switch) findViewById(R.id.switch_bt_allTime);
+        sc = (SwitchButton) findViewById(R.id.switch_bt_allTime);
         sp = getSharedPreferences("Switch", MODE_PRIVATE);
         bean = PubUtil.bean;
         deviceImei = bean.getIMEI();
@@ -353,9 +352,9 @@ public class FollowingAllTimeActivity extends Activity {
     }
 
     private void SwitchListener() {
-        sc.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        sc.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            public void onCheckedChanged(SwitchButton view, boolean isChecked) {
                 SharedPreferences.Editor editor = sp.edit();
                 ShowDialog();
                 if (!isChecked) {//关闭
@@ -379,6 +378,7 @@ public class FollowingAllTimeActivity extends Activity {
                 }
             }
         });
+
 
     }
 

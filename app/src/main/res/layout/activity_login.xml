@@ -87,6 +87,7 @@
             android:paddingRight="20dp" >
 
             <CheckBox
+                android:theme="@style/My_CheckBox"
                 android:id="@+id/user_sava_pass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -103,9 +103,9 @@
             app:si_animation_duration="500"
             app:si_disabled_alpha="1"
             android:layout_weight="7"
-            app:si_disabled_color="#dadada"
-            app:si_tint_color="#ffb700"
-            app:srcCompat="@drawable/ic_launcher" />
+            app:si_disabled_color="#1296db"
+            app:si_tint_color="#1296db"
+            app:srcCompat="@mipmap/ic_daohang" />
 
         <TextView
             android:id="@+id/button3_native_txt"
@@ -134,8 +134,9 @@
             android:layout_marginRight="10dp"
             android:layout_weight="7"
             android:background="@null"
+            android:scaleType="center"
             android:onClick="planing"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/ic_luxian" />
 
         <TextView
 
@@ -162,18 +163,16 @@
         android:orientation="vertical">
 
         <com.mj.gpsclient.Utils.SwitchIconView
-
-
             android:id="@+id/switchIconView2"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_gravity="center"
-            android:layout_weight="7"
-            android:scaleType="center"
             app:si_animation_duration="500"
             app:si_disabled_alpha="1"
-            app:si_tint_color="#7956f9"
-            app:srcCompat="@drawable/ic_launcher" />
+            android:layout_weight="7"
+            app:si_disabled_color="#1296db"
+            app:si_tint_color="#1296db"
+            app:srcCompat="@mipmap/ic_luxiandaohang" />
 
         <TextView
             android:id="@+id/button2_native_txt"

@@ -12,11 +12,19 @@
     <style name="AppTheme2" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
+    <style name="AppTheme3" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+    </style>
     <style name="setting_text">
         <item name="android:textColor">@color/moji_black_text</item>
         <item name="android:textSize">15.0sp</item>
     </style>
     <style name="DialogStyle" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">@color/calendar_selected_day_bg</item>
+        <item name="android:colorControlNormal">@color/calendar_text_inactive</item>
     </style>
 </resources>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buglib/buglib.iml" filepath="$PROJECT_DIR$/buglib/buglib.iml" />
       <module fileurl="file://$PROJECT_DIR$/gpsclient.iml" filepath="$PROJECT_DIR$/gpsclient.iml" />
     </modules>
   </component>

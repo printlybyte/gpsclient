@@ -8,6 +8,7 @@ import android.content.SharedPreferences.Editor;
 import com.ab.global.AbActivityManager;
 import com.ab.global.AbAppConfig;
 import com.baidu.mapapi.SDKInitializer;
+
 import com.mj.gpsclient.model.User;
 
 
@@ -27,7 +28,7 @@ public class MyApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 
-        instance = this;
+		instance = this;
 
         // 注册自定义的错误处理器
 //        CrashHandler crash = CrashHandler.getInstance();

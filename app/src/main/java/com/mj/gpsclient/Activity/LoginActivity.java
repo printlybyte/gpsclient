@@ -43,6 +43,7 @@ import com.ab.view.wheel.AbWheelUtil;
 import com.ab.view.wheel.AbWheelView;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+
 import com.mj.gpsclient.R;
 import com.mj.gpsclient.global.Constant;
 import com.mj.gpsclient.global.MyApplication;
@@ -103,6 +104,8 @@ public class LoginActivity extends AbActivity implements View.OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+//		BugPublicUtils.checkToUploadBugInfos(this, "/SCPS_crash/", "http://zc.xun365.net/WebService/SoftWare.asmx/SetBugInfo", "201801121045", "SCPS");
+
 		// requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setAbContentView(R.layout.activity_login);
 		AbActivityManager.getInstance().addActivity(this);

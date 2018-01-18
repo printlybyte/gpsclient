@@ -9,7 +9,7 @@
     <string name="title_activity_navigation">NavigationActivity</string>
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">Hello Square World!</string>
-    <string name="liveload">实时刷新</string>
+    <string name="liveload">线路规划</string>
     <string name="liveload_once">单次刷新</string>
     <string name="liveload_nai">开始导航</string>
 </resources>
